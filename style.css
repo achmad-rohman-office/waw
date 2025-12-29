@@ -1,0 +1,28 @@
+/* Styling dasar untuk body: background polos (biru muda) */
+body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    background-color: #87CEEB; /* Warna polos, bisa diganti */
+    overflow: hidden; /* Mencegah scroll */
+    position: relative;
+}
+
+/* Styling untuk karakter: posisi absolute, ukuran tetap, background gambar */
+#character {
+    position: absolute; /* Posisi absolute untuk gerakan bebas */
+    width: 100px; /* Ukuran gambar, bisa disesuaikan */
+    height: 100px;
+    background-image: url('walk2.png'); /* Gambar dari folder lokal */
+    background-size: cover; /* Sesuaikan gambar ke ukuran div */
+    background-repeat: no-repeat;
+    cursor: pointer; /* Kursor pointer saat hover */
+    transition: transform 0.5s ease-out; /* Transisi halus untuk efek bounce dan ease */
+    left: 50px; /* Posisi awal */
+    top: 50px;
+}
+
+/* Efek hover: sedikit scale untuk feedback visual */
+#character:hover {
+    transform: scale(1.05);
+}
